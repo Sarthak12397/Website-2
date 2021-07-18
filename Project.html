@@ -7,6 +7,7 @@
     <link rel = "stylesheet" href = "project.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src = "Jquery-3.6-min.js"></script>
     <title>Dog Care</title>
 </head>
 <body>
@@ -14,8 +15,8 @@
         <nav id="title">
             <div class="title-logo">
                 <div class="heading">
-                    <span href="#"><i class="fas fa-paw logo white"></i></span>
-                    <span class="white logo ">Dogs Care</span>
+                    <span href="#"><i class="fas fa-paw logo white"></i>Dogs Care</span>
+              
                 </div>
                 <div class="small-window">
                     <a href="#"><i class="far fa-moon white "></i></a>
@@ -180,7 +181,7 @@
         </article>
         <div class="feedback">
             <div class="user_image">
-                <img src = "User1.jpg" alt = "" >
+               <a> <img src = "User1.jpg" alt = "" ></a>
                 <div class="user_feedback">
                     <h1>&#8220</h1>
                     <p>
@@ -195,7 +196,7 @@
             </div>
 
             <div class="user_image">
-                <img src = "User2.jpg" alt = "" >
+                <a><img src = "User2.jpg" alt = "" ></a>
                 <div class="user_feedback">
                     <h1>&#8220</h1>
                     <p>
@@ -259,7 +260,7 @@
     <h5>PET LOVERS</h5>
     <h1>Our Team Is Filled With Highly Dedicated Pet Lovers</h1>
 
-    <button class="btn">Read More</button>
+    <button class="first-btn btn">Read More</button>
    </div>
 
 
@@ -305,11 +306,106 @@
 
 
     <footer id="bar-id">
+        <div class="last">
+            <div class="footer-part">
+                <span href="#"><i class="fas fa-paw "></i>
+                    Dogs Care
+                </span>
+                <p>Duis imperdiet sapien tortor, vitae congue diam auctor vitae. Aliquam eget turpis ornare, euismod
+                    ligul
+                    aeget, enenatis dui.</p>
+            </div>
+            <div class = "dogcare">
+                <h3>CATEGORIES</h3>
+            <div class="dogcare-categories">
+                <ul>
+                    <li>> Dog</li>
+                    <li>> Dog Care</li>
+                    <li>> Pets</li>
+                    <li>> Uncategorized</li>
+                </ul>
+                <ul>
+                    <li>> May 2021</li>
+                    <li>> April 2021</li>
+            </div>
+        </div>
+
+            <div class="suscriber">
+                <h3>NEWSLETTER</h3>
+                <h3>SUBSCRIBE HERE NOW</h3>
+                <span>
+                    <input type="text" placeholder="Email Address"><button class="btn"><i
+                            class="far fa-paper-plane"></i></button>
+                </span>
+                <p>Subscribe to our mailing list and get updates to your email inbox.</p>
+            </div>
+
+
+          
+
+
+            
+        </div>
+
+        <div class="media">
+                
+            <p>&#169; 2021 Dogs Care. All Rights Reserved | WordPress Theme by <strong>W3Layouts.</strong> </p>
+            <div class="media-links">
+                <a href = "https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href = "https://www.instagram.com/"> <i class="fab fa-instagram"></i></a>
+                <a href ="https://www.google.com/"> <i class="fab fa-google"></i></a>
+                <a href = "https://www.twitter.com/"><i class = "fab fa-twitter"></i></a>
+                <a href = "https://www.github.com/"><i class="fab fa-github"></i></a>
+            </div>
+    
+    
+     
+            </div>
+
+
+
+
+
+
+
+
+   
+
 
     
 
 
     </footer>
+
+
+    <script>
+        $(window).scroll(function () {
+        let z = $(window).scrollTOP()
+        if (z > 30) {
+            $("nav").css({"background":"white"})
+            $("nav ul li a").css({"color":"black"})
+            $(".heading > span  ").css({"color":"black"})
+            $(".heading span > i ").css({"color":"black"})
+            $(".title-links > span i ").css({"color":"black"})
+         
+
+        }
+
+        else if (z == 0){
+            
+            $("nav").css({"background":"transparent"})
+            $("nav ul li a").css({"color":"white"})
+            $(".heading > span  ").css({"color":"white"})
+            $(".heading span > i ").css({"color":"white"})
+            $(".title-links > span > i ").css({"color":"white"})
+            
+          
+            
+        }
+    })
+       
+        console.log(z);
+    </script>
 
 
 
