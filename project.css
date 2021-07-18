@@ -139,7 +139,7 @@ background-size: cover;
 }
 
 
-.heading > i :hover{
+.heading > span:hover{
     color: #F85A40;
 }
 
@@ -280,10 +280,16 @@ background-size: cover;
      }
  
      #title ul li:first-child a {
-         color: #fff;
+         color: #F85A40;
  
  
      }
+
+     #title a:hover {
+        color: #F85A40;
+
+
+    }
  
  
     .small-window{
